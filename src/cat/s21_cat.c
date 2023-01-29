@@ -27,7 +27,6 @@ void EmptyCatStruct(struct flags *flag) {
 int get_arg(char **argv, struct flags *flag) {
     int error = 1;
     int j = 0;
-
         for (int i = 1; argv[i]; i++) {
             if (argv[i][0]== '-' && argv[i][1] == '-') {
                 flag_GNU(argv, flag, i);
